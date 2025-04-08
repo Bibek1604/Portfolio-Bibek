@@ -39,13 +39,10 @@ const skillCategories = [
       { name: "HTML5", icon: <FileCode className="h-5 w-5" /> },
       { name: "CSS3", icon: <Columns className="h-5 w-5" /> },
       { name: "JavaScript", icon: <Coffee className="h-5 w-5" /> },
-      { name: "TypeScript", icon: <FileCode className="h-5 w-5" /> },
       { name: "React", icon: <Repeat className="h-5 w-5" /> },
       { name: "Next.js", icon: <Monitor className="h-5 w-5" /> },
       { name: "Tailwind CSS", icon: <Workflow className="h-5 w-5" /> },
       { name: "Framer Motion", icon: <Zap className="h-5 w-5" /> },
-      { name: "Redux", icon: <Layers className="h-5 w-5" /> },
-      { name: "Responsive Design", icon: <Smartphone className="h-5 w-5" /> },
     ],
   },
   {
@@ -53,14 +50,11 @@ const skillCategories = [
     icon: <Server className="h-6 w-6" />,
     color: "blue",
     skills: [
-      { name: "Node.js", icon: <Code className="h-5 w-5" /> },
-      { name: "Express", icon: <Server className="h-5 w-5" /> },
+
       { name: "Python", icon: <Code className="h-5 w-5" /> },
       { name: "Django", icon: <Grid className="h-5 w-5" /> },
-      { name: "GraphQL", icon: <Database className="h-5 w-5" /> },
       { name: "REST APIs", icon: <Globe className="h-5 w-5" /> },
       { name: "Authentication", icon: <Settings className="h-5 w-5" /> },
-      { name: "Serverless", icon: <Cpu className="h-5 w-5" /> },
     ],
   },
   {
@@ -72,8 +66,6 @@ const skillCategories = [
       { name: "PostgreSQL", icon: <Database className="h-5 w-5" /> },
       { name: "MySQL", icon: <Database className="h-5 w-5" /> },
       { name: "Firebase", icon: <Database className="h-5 w-5" /> },
-      { name: "Supabase", icon: <Database className="h-5 w-5" /> },
-      { name: "Redis", icon: <Database className="h-5 w-5" /> },
     ],
   },
   {
@@ -84,11 +76,9 @@ const skillCategories = [
       { name: "Git", icon: <GitBranch className="h-5 w-5" /> },
       { name: "GitHub", icon: <Github className="h-5 w-5" /> },
       { name: "Docker", icon: <Package className="h-5 w-5" /> },
-      { name: "CI/CD", icon: <Repeat className="h-5 w-5" /> },
       { name: "Jest", icon: <Terminal className="h-5 w-5" /> },
       { name: "Figma", icon: <Figma className="h-5 w-5" /> },
       { name: "VS Code", icon: <Code className="h-5 w-5" /> },
-      { name: "Webpack", icon: <Package className="h-5 w-5" /> },
     ],
   },
 ]

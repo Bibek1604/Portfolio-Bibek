@@ -234,29 +234,24 @@ export default function Contact() {
                 <ContactInfo
                   icon={<Mail className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                   title="Email"
-                  content="your.email@example.com"
+                  content="calltobibek@gmail.com"
                   href="mailto:your.email@example.com"
                 />
 
                 <ContactInfo
                   icon={<MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                   title="Location"
-                  content="New York, NY, USA"
+                  content="Nepal, Kathmandu"
                 />
 
-                <ContactInfo
-                  icon={<Phone className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
-                  title="Phone"
-                  content="+1 (555) 123-4567"
-                  href="tel:+15551234567"
-                />
+              
               </div>
 
               <div className="mt-8">
                 <h4 className="font-bold text-gray-800 dark:text-white mb-4">Social Media</h4>
                 <div className="flex gap-4">
                   <motion.a
-                    href="#"
+                    href="https://www.linkedin.com/in/bibek-pandey-43313723b/"
                     className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-800/50 transition-colors"
                     whileHover={{ scale: 1.1, y: -5 }}
                     whileTap={{ scale: 0.9 }}
@@ -265,7 +260,7 @@ export default function Contact() {
                     <Linkedin className="h-5 w-5" />
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href="https://github.com/Bibek1604"
                     className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-800/50 transition-colors"
                     whileHover={{ scale: 1.1, y: -5 }}
                     whileTap={{ scale: 0.9 }}
@@ -273,15 +268,7 @@ export default function Contact() {
                   >
                     <Github className="h-5 w-5" />
                   </motion.a>
-                  <motion.a
-                    href="#"
-                    className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-800/50 transition-colors"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    whileTap={{ scale: 0.9 }}
-                    aria-label="Twitter"
-                  >
-                    <Twitter className="h-5 w-5" />
-                  </motion.a>
+ 
                 </div>
               </div>
             </div>
@@ -290,37 +277,8 @@ export default function Contact() {
       </div>
 
       <footer className="mt-20 text-center text-gray-600 dark:text-gray-400">
-        <div className="flex justify-center gap-6 mb-6">
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-          >
-            <Linkedin className="h-6 w-6" />
-            <span className="sr-only">LinkedIn</span>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-          >
-            <Github className="h-6 w-6" />
-            <span className="sr-only">GitHub</span>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-          >
-            <Twitter className="h-6 w-6" />
-            <span className="sr-only">Twitter</span>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-          >
-            <Mail className="h-6 w-6" />
-            <span className="sr-only">Email</span>
-          </a>
-        </div>
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+
+        <p>© {new Date().getFullYear()} Bibek Pandey. All rights reserved.</p>
       </footer>
     </section>
   )

@@ -9,7 +9,7 @@ const involvements = [
     id: 1,
     title: "IT Club Secretary",
     organization: "Softwarica College",
-    period: "2018 - 2019",
+    period: "2025Feb - 2025 August",
     description:
       "Organized tech events, workshops, and hackathons. Managed club communications and coordinated with other student organizations.",
     image: "/placeholder.svg?height=100&width=100",
@@ -17,29 +17,30 @@ const involvements = [
   },
   {
     id: 2,
-    title: "Open Source Contributor",
-    organization: "Various Projects",
-    period: "2020 - Present",
+    title: "Member",
+    organization: "CodeForChange",
+    period: "2025 jan - 2026 jan",
     description:
-      "Active contributor to several open-source projects, including documentation improvements, bug fixes, and feature implementations.",
+      "Participated in community, coding workshops, and tech talks. ",
     image: "/placeholder.svg?height=100&width=100",
-    type: "Open Source",
+    type: "Club",
   },
+
   {
     id: 3,
-    title: "Hackathon Winner",
-    organization: "TechFest 2021",
-    period: "October 2021",
+    title: "Apex Ideathon",
+    organization: "Apex",
+    period: "October 2025",
     description:
-      "First place winner at TechFest 2021 Hackathon. Developed an innovative solution for community waste management using IoT and mobile technology.",
+      "Best implementation award at Apex Hackathon. ",
     image: "/placeholder.svg?height=100&width=100",
     type: "Hackathon",
   },
   {
-    id: 4,
+    id: 3,
     title: "Data Fellowship Program",
-    organization: "Tech Academy",
-    period: "2022",
+    organization: "DataCamp",
+    period: "2025",
     description:
       "Selected for an exclusive data science fellowship program. Worked on real-world data projects and collaborated with industry experts.",
     image: "/placeholder.svg?height=100&width=100",

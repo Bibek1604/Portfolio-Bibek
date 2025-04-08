@@ -11,10 +11,10 @@ const projects = [
     title: "E-commerce Platform",
     description: "A full-featured online store with product listings, cart functionality, and secure checkout.",
     longDescription:
-      "This e-commerce platform was built with Next.js and includes features like product filtering, user authentication, shopping cart, wishlist, and secure payment processing with Stripe. The admin dashboard allows for easy product and order management.",
+      "This e-commerce platform was built with wordpress and includes features like product filtering, user authentication, shopping cart, wishlist, and secure payment processing with Stripe. The admin dashboard allows for easy product and order management.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB"],
-    demoUrl: "#",
+    tags: ["WordPress", "WooCommerce", "Stripe"],
+    demoUrl: "https://www.epasaley.com",
     githubUrl: "#",
     gallery: [
       "/placeholder.svg?height=400&width=600",
@@ -24,13 +24,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Cv Builder with Ai",
     description:
-      "A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.",
+      "Application that generates CVs using AI technology, allowing users to create professional resumes quickly.",
     longDescription:
-      "This task management application features drag-and-drop task organization, team collaboration tools, real-time updates, and integration with calendar apps. It includes user authentication, role-based permissions, and activity tracking.",
+      "This CV builder application uses AI to help users create professional resumes. Users can input their details, and the AI generates a well-structured CV. The app includes templates, customization options, and export features.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "TypeScript", "Firebase", "Framer Motion"],
+    tags: ["React", "TypeScript", "Firebase", "Framer Motion","Gemini"],
     demoUrl: "#",
     githubUrl: "#",
     gallery: [
@@ -42,12 +42,12 @@ const projects = [
   {
     id: 3,
     title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing projects and skills with a modern design.",
+    description: "A responsive portfolio website for IT Company.",
     longDescription:
       "This portfolio website was designed with a focus on user experience and visual appeal. It features smooth animations, responsive design, and optimized performance. The content is easily manageable through a headless CMS.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS", "Sanity CMS"],
-    demoUrl: "#",
+    tags: ["react.js", "Framer Motion", "Tailwind CSS", "leaflet"],
+    demoUrl: "https://ndhtechnologies.com",
     githubUrl: "#",
     gallery: [
       "/placeholder.svg?height=400&width=600",
@@ -57,14 +57,43 @@ const projects = [
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "A weather application displaying current conditions and forecasts with interactive maps.",
-    longDescription:
-      "This weather dashboard provides real-time weather data, 7-day forecasts, and interactive maps. It includes features like location search, saved locations, weather alerts, and historical weather data visualization.",
+    title: "Bank account Qr generator",
+    description: "A web application for generating QR codes for bank account details.",
+    longDescription:"This web application allows users to generate QR codes for their bank account details. Users can input their account information, and the app generates a QR code that can be scanned for easy sharing. The app is built with js and python and uses a QR code library for generation.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["JavaScript", "API Integration", "Chart.js", "Mapbox"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://qr-generator-five-ebon.vercel.app/",
+    githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
+    gallery: [
+      "/placeholder.svg?height=400&width=600",
+      "/placeholder.svg?height=400&width=600",
+      "/placeholder.svg?height=400&width=600",
+    ],
+  },
+  {
+    id: 4,
+    title: "GhumneBato",
+    description: "A web application for finding route and places to visit.",
+    longDescription:"This web application allows users to find routes and places to visit. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
+    image: "/placeholder.svg?height=400&width=600",
+    tags: ["react", "API Integration", "Chart.js", "Mapbox","python"],
+    demoUrl: "https://qr-generator-five-ebon.vercel.app/",
+    githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
+    gallery: [
+      "/placeholder.svg?height=400&width=600",
+      "/placeholder.svg?height=400&width=600",
+      "/placeholder.svg?height=400&width=600",
+    ],
+  },
+  {
+    id: 4,
+    title: "ShiftGear",
+    description: "A web application for finding vechicles on rent and sell them.",
+    longDescription:"This web application allows users to find vechicles on rent and sell them. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
+    image: "/placeholder.svg?height=400&width=600",
+    tags: ["python",'django'],
+    demoUrl: "https://qr-generator-five-ebon.vercel.app/",
+    githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
     gallery: [
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",

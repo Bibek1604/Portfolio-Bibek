@@ -9,62 +9,28 @@ const timelineItems = [
   {
     id: 1,
     icon: <GraduationCap className="h-6 w-6" />,
-    title: "Computer Science Degree",
-    subtitle: "University of Technology",
-    date: "2016 - 2020",
+    title: "Bsc (hons) Computing",
+    subtitle: "Coventry University",
+    date: "2023 - 2026",
     category: "Education",
-    description:
-      "Graduated with honors in Computer Science, specializing in web development and user interface design.",
+ 
     details:
-      "Completed coursework in algorithms, data structures, software engineering, and web development. Thesis focused on responsive design patterns for modern web applications.",
+      "Completed coursework in algorithms, data structures, software engineering, and web development.  focused on responsive design patterns for modern web applications.",
   },
   {
     id: 2,
     icon: <Briefcase className="h-6 w-6" />,
     title: "Junior Developer",
-    subtitle: "Tech Innovations Inc.",
-    date: "2020 - 2021",
+    subtitle: "Nepal Digital Heights and Technologies.",
+    date: "2025 Jan- Present",
     category: "Work",
     description: "Developed responsive web applications using React and Next.js.",
     details:
       "Implemented modern UI/UX designs and improved site performance by 40% through code optimization. Worked on e-commerce platforms and content management systems.",
     skills: ["React", "Next.js", "Tailwind CSS"],
   },
-  {
-    id: 3,
-    icon: <Code className="h-6 w-6" />,
-    title: "E-commerce Platform",
-    subtitle: "Major Client Project",
-    date: "2021",
-    category: "Project",
-    description: "Led the development of a full-featured e-commerce platform.",
-    details:
-      "Built product listings, cart functionality, and secure checkout. Implemented state management and API integration with payment gateways.",
-    skills: ["TypeScript", "Next.js", "Stripe"],
-  },
-  {
-    id: 4,
-    icon: <Briefcase className="h-6 w-6" />,
-    title: "Senior Developer",
-    subtitle: "Digital Solutions Ltd.",
-    date: "2022 - Present",
-    category: "Work",
-    description: "Lead developer for client projects, focusing on performance optimization and accessibility.",
-    details:
-      "Mentored junior developers and implemented best practices across the organization. Specialized in building scalable web applications with modern frameworks.",
-    skills: ["TypeScript", "Next.js", "GraphQL"],
-  },
-  {
-    id: 5,
-    icon: <Award className="h-6 w-6" />,
-    title: "Web Development Certification",
-    subtitle: "Tech Academy",
-    date: "2019",
-    category: "Certification",
-    description: "Advanced certification in modern web development techniques and frameworks.",
-    details:
-      "Specialized in responsive design and progressive web applications. Learned best practices for performance optimization and accessibility.",
-  },
+
+
 ]
 
 export default function Timeline() {

@@ -149,25 +149,21 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-              <InfoCard
-                icon={<Calendar className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
-                label="Age"
-                value="28 Years"
-              />
+
               <InfoCard
                 icon={<MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                 label="Location"
-                value="New York, USA"
+                value="Nepal Kathmandu" 
               />
               <InfoCard
                 icon={<Mail className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                 label="Email"
-                value="your.email@example.com"
+                value="calltobibek@gmail.com"
               />
               <InfoCard
                 icon={<Briefcase className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                 label="Current Role"
-                value="Senior Developer"
+                value="Developer"
               />
               <InfoCard
                 icon={<GraduationCap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
@@ -177,7 +173,7 @@ export default function About() {
               <InfoCard
                 icon={<Calendar className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
                 label="Experience"
-                value="5+ Years"
+                value="1.5+ Years"
               />
             </div>
           </motion.div>
