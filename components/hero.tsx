@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import { ArrowDown, Download, MousePointer, Sparkles } from "lucide-react"
 import { useRef, useState } from "react"
-
+import personal from '../public/personal.jpg'
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -126,7 +126,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">View My Work</span>
+              <span className="relative z-10 ">View My Work</span>
               <ArrowDown className="h-4 w-4 group-hover:translate-y-1 transition-transform relative z-10" />
 
               {/* Button hover effect */}
@@ -137,24 +137,7 @@ export default function Hero() {
                 transition={{ duration: 0.3 }}
               />
             </motion.a>
-            <motion.a
-              href="/resume.pdf"
-              className="border border-emerald-600 dark:border-emerald-500 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 px-6 py-3 rounded-md transition-colors duration-300 flex items-center gap-2 group relative overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              download
-            >
-              <span className="relative z-10">Download Resume</span>
-              <Download className="h-4 w-4 group-hover:translate-y-1 transition-transform relative z-10" />
 
-              {/* Button hover effect */}
-              <motion.span
-                className="absolute inset-0 bg-emerald-50 dark:bg-emerald-950/50"
-                initial={{ y: "100%" }}
-                whileHover={{ y: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.a>
           </motion.div>
         </motion.div>
 
@@ -194,7 +177,7 @@ export default function Hero() {
             />
             <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-emerald-600 dark:border-emerald-400 shadow-lg shadow-emerald-600/20 dark:shadow-emerald-400/20">
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                src={personal}
                 alt="Profile"
                 width={300}
                 height={300}

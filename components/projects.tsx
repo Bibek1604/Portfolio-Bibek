@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
-import { motion, useScroll, useTransform } from "framer-motion"
-import Image from "next/image"
-import { ExternalLink, Github, Maximize2, X, ChevronLeft, ChevronRight } from "lucide-react"
-import { useRef, useState } from "react"
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import { ExternalLink, Github, Maximize2, X } from "lucide-react";
+import { useRef, useState } from "react";
+import epasaley from "../public/1.png";
+import cv from "../public/7.png";
+import ndh from "../public/2.png";
+import car from "../public/5.png";
+import ghumne from "../public/4.png";
+import qr from "../public/3.png";
 
 const projects = [
   {
@@ -11,16 +17,11 @@ const projects = [
     title: "E-commerce Platform",
     description: "A full-featured online store with product listings, cart functionality, and secure checkout.",
     longDescription:
-      "This e-commerce platform was built with wordpress and includes features like product filtering, user authentication, shopping cart, wishlist, and secure payment processing with Stripe. The admin dashboard allows for easy product and order management.",
-    image: "/placeholder.svg?height=400&width=600",
+      "This e-commerce platform was built with WordPress and includes features like product filtering, user authentication, shopping cart, wishlist, and secure payment processing with Stripe. The admin dashboard allows for easy product and order management.",
+    image: epasaley,
     tags: ["WordPress", "WooCommerce", "Stripe"],
     demoUrl: "https://www.epasaley.com",
     githubUrl: "#",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
   {
     id: 2,
@@ -29,15 +30,10 @@ const projects = [
       "Application that generates CVs using AI technology, allowing users to create professional resumes quickly.",
     longDescription:
       "This CV builder application uses AI to help users create professional resumes. Users can input their details, and the AI generates a well-structured CV. The app includes templates, customization options, and export features.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "TypeScript", "Firebase", "Framer Motion","Gemini"],
+    image: cv,
+    tags: ["React", "TypeScript", "Firebase", "Framer Motion", "Gemini"],
     demoUrl: "#",
     githubUrl: "#",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
   {
     id: 3,
@@ -45,84 +41,63 @@ const projects = [
     description: "A responsive portfolio website for IT Company.",
     longDescription:
       "This portfolio website was designed with a focus on user experience and visual appeal. It features smooth animations, responsive design, and optimized performance. The content is easily manageable through a headless CMS.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: ndh,
     tags: ["react.js", "Framer Motion", "Tailwind CSS", "leaflet"],
     demoUrl: "https://ndhtechnologies.com",
     githubUrl: "#",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
   {
     id: 4,
     title: "Bank account Qr generator",
     description: "A web application for generating QR codes for bank account details.",
-    longDescription:"This web application allows users to generate QR codes for their bank account details. Users can input their account information, and the app generates a QR code that can be scanned for easy sharing. The app is built with js and python and uses a QR code library for generation.",
-    image: "/placeholder.svg?height=400&width=600",
+    longDescription:
+      "This web application allows users to generate QR codes for their bank account details. Users can input their account information, and the app generates a QR code that can be scanned for easy sharing. The app is built with js and python and uses a QR code library for generation.",
+    image: qr,
     tags: ["JavaScript", "API Integration", "Chart.js", "Mapbox"],
     demoUrl: "https://qr-generator-five-ebon.vercel.app/",
     githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
   {
-    id: 4,
+    id: 5,
     title: "GhumneBato",
-    description: "A web application for finding route and places to visit.",
-    longDescription:"This web application allows users to find routes and places to visit. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["react", "API Integration", "Chart.js", "Mapbox","python"],
+    description: "A web application for finding routes and places to visit.",
+    longDescription:
+      "This web application allows users to find routes and places to visit. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
+    image: ghumne,
+    tags: ["react", "API Integration", "Chart.js", "Mapbox", "python"],
     demoUrl: "https://qr-generator-five-ebon.vercel.app/",
     githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
   {
-    id: 4,
+    id: 6,
     title: "ShiftGear",
-    description: "A web application for finding vechicles on rent and sell them.",
-    longDescription:"This web application allows users to find vechicles on rent and sell them. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["python",'django'],
+    description: "A web application for finding vehicles on rent and sell them.",
+    longDescription:
+      "This web application allows users to find vehicles on rent and sell them. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
+    image: car,
+    tags: ["python", "django"],
     demoUrl: "https://qr-generator-five-ebon.vercel.app/",
     githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
   },
-]
+];
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState<null | (typeof projects)[0]>(null)
-  const [galleryIndex, setGalleryIndex] = useState(0)
-
-  const containerRef = useRef<HTMLDivElement>(null)
+  const [selectedProject, setSelectedProject] = useState(null);
+  const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
-  })
+  });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100])
+  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
-  const getYOffset = (index: number) => {
-    return useTransform(scrollYProgress, [0, 1], [index % 2 === 0 ? 50 : 100, index % 2 === 0 ? -50 : -100])
-  }
+  const getYOffset = (index) => {
+    return useTransform(scrollYProgress, [0, 1], [index % 2 === 0 ? 50 : 100, index % 2 === 0 ? -50 : -100]);
+  };
 
   return (
     <section id="projects" className="py-20 px-6 relative overflow-hidden" ref={containerRef}>
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-white dark:bg-gray-900 -z-10" />
-
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -174,41 +149,20 @@ export default function Projects() {
               key={project.id}
               project={project}
               index={index}
-              onClick={() => {
-                setSelectedProject(project)
-                setGalleryIndex(0)
-              }}
+              onClick={() => setSelectedProject(project)}
               style={{ y: getYOffset(index) }}
             />
           ))}
         </div>
       </div>
 
-      {/* Project Modal */}
-      {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-          galleryIndex={galleryIndex}
-          setGalleryIndex={setGalleryIndex}
-        />
-      )}
+      {selectedProject && <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />}
     </section>
-  )
+  );
 }
 
-function ProjectCard({
-  project,
-  index,
-  onClick,
-  style,
-}: {
-  project: (typeof projects)[0]
-  index: number
-  onClick: () => void
-  style?: any
-}) {
-  const [isHovered, setIsHovered] = useState(false)
+function ProjectCard({ project, index, onClick, style }) {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -231,7 +185,7 @@ function ProjectCard({
           className="h-full w-full"
         >
           <Image
-            src={project.image || "/placeholder.svg"}
+            src={project.image}
             alt={project.title}
             width={600}
             height={400}
@@ -258,7 +212,6 @@ function ProjectCard({
           </motion.button>
         </motion.div>
 
-        {/* Tag that appears on hover */}
         <motion.div
           className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium"
           initial={{ x: -50, opacity: 0 }}
@@ -294,8 +247,6 @@ function ProjectCard({
           >
             <span className="relative z-10">View Demo</span>
             <ExternalLink className="h-4 w-4 relative z-10" />
-
-            {/* Button hover effect */}
             <motion.span
               className="absolute inset-0 bg-emerald-700 dark:bg-emerald-600"
               initial={{ x: "-100%" }}
@@ -311,8 +262,6 @@ function ProjectCard({
           >
             <span className="relative z-10">Source Code</span>
             <Github className="h-4 w-4 relative z-10" />
-
-            {/* Button hover effect */}
             <motion.span
               className="absolute inset-0 bg-emerald-50 dark:bg-emerald-950/50"
               initial={{ y: "100%" }}
@@ -323,28 +272,10 @@ function ProjectCard({
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
-function ProjectModal({
-  project,
-  onClose,
-  galleryIndex,
-  setGalleryIndex,
-}: {
-  project: (typeof projects)[0]
-  onClose: () => void
-  galleryIndex: number
-  setGalleryIndex: (index: number) => void
-}) {
-  const nextImage = () => {
-    setGalleryIndex((galleryIndex + 1) % project.gallery.length)
-  }
-
-  const prevImage = () => {
-    setGalleryIndex((galleryIndex - 1 + project.gallery.length) % project.gallery.length)
-  }
-
+function ProjectModal({ project, onClose }) {
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
@@ -361,72 +292,13 @@ function ProjectModal({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative h-80">
-          {/* Gallery navigation */}
-          <div className="absolute inset-0 flex items-center justify-between px-4 z-20">
-            <motion.button
-              onClick={(e) => {
-                e.stopPropagation()
-                prevImage()
-              }}
-              className="bg-white/80 dark:bg-gray-800/80 text-gray-800 dark:text-white p-2 rounded-full"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </motion.button>
-
-            <motion.button
-              onClick={(e) => {
-                e.stopPropagation()
-                nextImage()
-              }}
-              className="bg-white/80 dark:bg-gray-800/80 text-gray-800 dark:text-white p-2 rounded-full"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <ChevronRight className="h-6 w-6" />
-            </motion.button>
-          </div>
-
-          {/* Gallery images */}
-          <div className="relative h-full w-full overflow-hidden">
-            {project.gallery.map((image, index) => (
-              <motion.div
-                key={index}
-                className="absolute inset-0"
-                initial={{ opacity: 0, x: index > galleryIndex ? 100 : -100 }}
-                animate={{
-                  opacity: index === galleryIndex ? 1 : 0,
-                  x: index === galleryIndex ? 0 : index > galleryIndex ? 100 : -100,
-                }}
-                transition={{ duration: 0.5 }}
-              >
-                <Image
-                  src={image || "/placeholder.svg"}
-                  alt={`${project.title} - Image ${index + 1}`}
-                  width={800}
-                  height={500}
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Gallery indicators */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
-            {project.gallery.map((_, index) => (
-              <button
-                key={index}
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setGalleryIndex(index)
-                }}
-                className={`w-2 h-2 rounded-full ${index === galleryIndex ? "bg-white" : "bg-white/50"}`}
-                aria-label={`Go to image ${index + 1}`}
-              />
-            ))}
-          </div>
-
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={500}
+            className="w-full h-full object-cover"
+          />
           <motion.button
             onClick={onClose}
             className="absolute top-4 right-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-white p-2 rounded-full z-20"
@@ -480,6 +352,5 @@ function ProjectModal({
         </div>
       </motion.div>
     </motion.div>
-  )
+  );
 }
-
