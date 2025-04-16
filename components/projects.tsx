@@ -20,7 +20,7 @@ const projects = [
       "This e-commerce platform was built with WordPress and includes features like product filtering, user authentication, shopping cart, wishlist, and secure payment processing with Stripe. The admin dashboard allows for easy product and order management.",
     image: epasaley,
     tags: ["WordPress", "WooCommerce", "Stripe"],
-    demoUrl: "https://www.epasaley.com",
+    demoUrl: "https://epasaley.com/",
     githubUrl: "#",
   },
   {
@@ -65,8 +65,8 @@ const projects = [
       "This web application allows users to find routes and places to visit. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
     image: ghumne,
     tags: ["react", "API Integration", "Chart.js", "Mapbox", "python"],
-    demoUrl: "https://qr-generator-five-ebon.vercel.app/",
-    githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
+    demoUrl: "/",
+    githubUrl: "/",
   },
   {
     id: 6,
@@ -76,8 +76,8 @@ const projects = [
       "This web application allows users to find vehicles on rent and sell them. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
     image: car,
     tags: ["python", "django"],
-    demoUrl: "https://qr-generator-five-ebon.vercel.app/",
-    githubUrl: "https://github.com/Bibek1604/QR-GENERATOR.git",
+    demoUrl: "/",
+    githubUrl: "https://github.com/Bibek1604/ShiftGear",
   },
 ];
 
