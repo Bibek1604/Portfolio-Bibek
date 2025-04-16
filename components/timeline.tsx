@@ -24,7 +24,7 @@ const timelineItems = [
     subtitle: "Nepal Digital Heights and Technologies.",
     date: "2025 Jan- Present",
     category: "Work",
-    description: "Developed responsive web applications using React and Next.js.",
+    description: "Developed responsive web applications using React and Python.",
     details:
       "Implemented modern UI/UX designs and improved site performance by 40% through code optimization. Worked on e-commerce platforms and content management systems.",
     skills: ["React", "Next.js", "Tailwind CSS"],

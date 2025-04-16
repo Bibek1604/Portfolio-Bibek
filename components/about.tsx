@@ -18,7 +18,7 @@ export default function About() {
   const contentY = useTransform(scrollYProgress, [0, 1], [50, -50])
 
   const [expandedBio, setExpandedBio] = useState(false)
-
+  
   return (
     <section id="about" className="py-20 px-6 relative overflow-hidden" ref={containerRef}>
       {/* Background gradient */}
@@ -60,42 +60,7 @@ export default function About() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            style={{ y: imageY }}
-          >
-            <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105 hover:rotate-2">
-              <div className="absolute inset-0 bg-emerald-500/20 dark:bg-emerald-500/10 z-10" />
-              <Image
-                src="/placeholder.svg?height=600&width=500"
-                alt="About Me"
-                width={500}
-                height={600}
-                className="w-full h-full object-cover"
-              />
 
-              {/* Interactive overlay */}
-              <motion.div
-                className="absolute inset-0 bg-emerald-600/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 z-20"
-                whileHover={{ opacity: 1 }}
-              >
-                <motion.div
-                  className="bg-white dark:bg-gray-800 px-4 py-2 rounded-md text-emerald-600 dark:text-emerald-400 font-medium"
-                  initial={{ y: 20, opacity: 0 }}
-                  whileHover={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  That's me!
-                </motion.div>
-              </motion.div>
-            </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg -z-10" />
-            <div className="absolute -top-6 -left-6 w-48 h-48 bg-emerald-200 dark:bg-emerald-800/50 rounded-lg -z-10" />
-          </motion.div>
 
           <motion.div
             className="space-y-6"

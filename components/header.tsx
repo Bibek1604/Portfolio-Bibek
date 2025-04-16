@@ -58,10 +58,10 @@ export default function Header() {
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        {/* <Link href="/" className="flex items-center gap-2 group">
           <Frame className="h-6 w-6 text-emerald-600 dark:text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
           <span className="font-bold text-lg text-gray-800 dark:text-white">Your Name</span>
-        </Link>
+        </Link> */}
 
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (

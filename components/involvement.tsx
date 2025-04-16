@@ -3,6 +3,12 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Calendar } from "lucide-react"
+import apex from '../public/apex.png'
+import cfc from '../public/cfc.png'
+import datacamp from '../public/datacamp.png'
+import it from '../public/it.png'
+
+
 
 const involvements = [
   {
@@ -12,7 +18,7 @@ const involvements = [
     period: "2025Feb - 2025 August",
     description:
       "Organized tech events, workshops, and hackathons. Managed club communications and coordinated with other student organizations.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: it,
     type: "Club",
   },
   {
@@ -22,7 +28,7 @@ const involvements = [
     period: "2025 jan - 2026 jan",
     description:
       "Participated in community, coding workshops, and tech talks. ",
-    image: "/placeholder.svg?height=100&width=100",
+    image: cfc,
     type: "Club",
   },
 
@@ -33,7 +39,7 @@ const involvements = [
     period: "October 2025",
     description:
       "Best implementation award at Apex Hackathon. ",
-    image: "/placeholder.svg?height=100&width=100",
+    image: apex,
     type: "Hackathon",
   },
   {
@@ -43,7 +49,7 @@ const involvements = [
     period: "2025",
     description:
       "Selected for an exclusive data science fellowship program. Worked on real-world data projects and collaborated with industry experts.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: datacamp,
     type: "Fellowship",
   },
 ]
