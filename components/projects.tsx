@@ -76,7 +76,7 @@ const projects = [
       "This web application allows users to find vehicles on rent and sell them. Users can input their location and the app provides suggestions for nearby attractions, restaurants, and activities. The app is built with js and python and uses a map library for route generation.",
     image: car,
     tags: ["python", "django"],
-    demoUrl: "/",
+    demoUrl: "/https://github.com/Bibek1604/ShiftGear",
     githubUrl: "https://github.com/Bibek1604/ShiftGear",
   },
 ];

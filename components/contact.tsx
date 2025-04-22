@@ -22,24 +22,35 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
-    setTimeout(() => {
-      console.log(formData)
+  
+    try {
+      const response = await fetch("https://formspree.io/f/xovdqvqj", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+  
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormData({ name: "", email: "", subject: "", message: "" })
+        setTimeout(() => setIsSubmitted(false), 5000)
+      } else {
+        const data = await response.json()
+        console.error("Formspree error:", data)
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({ name: "", email: "", subject: "", message: "" })
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false)
-      }, 5000)
-    }, 1500)
+    }
   }
-
+  
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 relative overflow-hidden">
       {/* Background gradient */}
@@ -138,7 +149,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors"
-                    placeholder="your.email@example.com"
+                    placeholder="calltobibek@gmail.com"
                   />
                 </div>
 
@@ -231,12 +242,13 @@ export default function Contact() {
               </p>
 
               <div className="space-y-6">
-                <ContactInfo
-                  icon={<Mail className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
-                  title="Email"
-                  content="calltobibek@gmail.com"
-                  href="mailto:your.email@example.com"
-                />
+              <ContactInfo
+  icon={<Mail className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
+  title="Email"
+  content="calltobibek@gmail.com"
+  href="mailto:calltobibek@gmail.com"
+/>
+
 
                 <ContactInfo
                   icon={<MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />}
