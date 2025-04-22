@@ -149,7 +149,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors"
-                    placeholder="calltobibek@gmail.com"
+                    placeholder="Enter your mail"
                   />
                 </div>
 
